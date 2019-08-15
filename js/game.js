@@ -115,6 +115,19 @@
         this.rotation = 0;
     }
 
+    Circle.prototype.drawImage=function(ctx,img){
+        if(img.width){
+            ctx.save();
+            ctx.translate(this.x,this.y);
+            ctx.scale(this.scale,this.scale);
+            ctx.rotate(this.rotation*Math.PI/180);
+            ctx.drawImage(img,-img.width/2,-img.height/2);
+            ctx.restore();
+        }
+        else
+            this.stroke(ctx);
+    }
+
     Circle.prototype.distance = function (circle) {
         if (circle != null) {
             ctx.beginPath();
