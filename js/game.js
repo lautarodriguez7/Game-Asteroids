@@ -98,4 +98,13 @@
         ctx.fillText('Speed3: '+speed3, 0, 20);
     }
 
+    document.addEventListener('keydown',function(evt){
+        lastPress=evt.keyCode;
+        pressing[evt.keyCode]=true;
+    },false);
+
+    document.addEventListener('keyup',function(evt){
+        pressing[evt.keyCode]=false;
+    },false);
+
 }(window));
