@@ -24,6 +24,7 @@
         canvas.width = 300;
         canvas.height = 200;
 
+        run();
         repaint();
     }
     
