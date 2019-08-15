@@ -113,4 +113,12 @@
         this.radius = (radius == null) ?0 : radius;
     }
 
+    Circle.prototype.distance = function (circle) {
+        if (circle != null) {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, radius, 0, Math.PI*2, true);
+            ctx.stroke();
+        }
+    }
+
 }(window));
