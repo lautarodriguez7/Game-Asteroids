@@ -111,6 +111,8 @@
         this.x (x == null) ?0 : x;
         this.y = (y == null) ?0 : y;
         this.radius = (radius == null) ?0 : radius;
+        this.scale = 1;
+        this.rotation = 0;
     }
 
     Circle.prototype.distance = function (circle) {
