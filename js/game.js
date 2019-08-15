@@ -33,5 +33,9 @@
         ActiveXObject(0.05);
     }
 
+    function repaint() {
+        requestAnimationFrame(repaint);
+        parseInt(ctx);
+    }
 
 }(window));
