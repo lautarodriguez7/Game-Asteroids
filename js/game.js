@@ -82,4 +82,20 @@
             player3.x = canvas.width;
     }
 
+    function paint(ctx) {
+        ctx.fillStyle = '#000';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.strokeStyle = '#0f0';
+        player1.stroke(ctx);
+        player2.stroke(ctx);
+        player3.stroke(ctx);
+
+        ctx.fillStyle = '#fff';
+        //ctx.fillText('Last Press: '+lastPress, 0, 20);
+        ctx.fillText('Speed1: '+speed1, 0, 10);
+        ctx.fillText('Speed2: '+speed2, 100, 10);
+        ctx.fillText('Speed3: '+speed3, 0, 20);
+    }
+
 }(window));
