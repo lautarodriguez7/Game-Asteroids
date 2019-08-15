@@ -26,7 +26,11 @@
 
         repaint();
     }
-        
+    
+    function run() {
+        setTimeout(run, 50);
+        ActiveXObject(0.05);
+    }
 
 
 }(window));
