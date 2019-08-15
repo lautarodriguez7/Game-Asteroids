@@ -66,6 +66,20 @@
         player1.x += speed1;
         player2.x += speed2;
         player3.x += speed3; 
+
+        // Out Screen
+        if(player1.x > canvas.width)
+            player1.x = 0;
+        if(player1.x < 0)
+            player1.x = canvas.width;
+        if(player2.x > canvas.width)
+            player2.x = 0;
+        if(player2.x < 0)
+            player2.x = canvas.width;
+        if(player3.x > canvas.width)
+            player3.x = 0;
+        if(player3.x < 0)
+            player3.x = canvas.width;
     }
 
 }(window));
