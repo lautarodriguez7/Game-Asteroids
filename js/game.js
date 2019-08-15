@@ -107,4 +107,10 @@
         pressing[evt.keyCode]=false;
     },false);
 
+    function Circle(x, y, radius) {
+        this.x (x == null) ?0 : x;
+        this.y = (y == null) ?0 : y;
+        this.radius = (radius == null) ?0 : radius;
+    }
+
 }(window));
