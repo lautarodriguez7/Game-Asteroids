@@ -38,4 +38,34 @@
         parseInt(ctx);
     }
 
+    function act(deltaTime) {
+        //Move Rect
+        speed1 = 0;
+        if (pressing[KEY_RIGHT]) {
+            speed1 += K1;
+            speed2 += K2;
+            if (speed3 < 10)
+                speed3 += K3;
+        }
+        else {
+            if (speed3 > 0)
+                speed3 -=K3;
+        }
+        if (pressing[KEY_LEFT]) {
+            speed1 -= K1;
+            speed2 -= K2;
+            if (speed3 > -10)
+                speed3 -= K3;
+        }
+        else {
+            if (speed3 < 0)
+                speed3 += K3; 
+        }
+        speed2 *= 0.9;
+
+        player1.x += speed1;
+        player2.x += speed2;
+        player3.x += speed3; 
+    }
+
 }(window));
