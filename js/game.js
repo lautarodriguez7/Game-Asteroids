@@ -12,6 +12,7 @@
     var canvas = null, ctx = null;
     var lastPress = null;
     var pressing = [];
+    var player = new circle(150, 100, 5);
     var player1 = new Circle(40, 40, 5);
     var player2 = new Circle(40, 100, 5);
     var player3 = new Circle(40, 160, 5);
