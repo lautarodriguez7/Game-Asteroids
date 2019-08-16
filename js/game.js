@@ -107,6 +107,9 @@
         ctx.fillText('Speed2: '+speed2, 100, 10);
         ctx.fillText('Speed3: '+speed3, 0, 20);
 
+        ctx.fillStyle = '#fff';
+        ctx.fillText('Rotation: ' +player.rotation, 0, 20);
+
         if(pressing[KEY_SPACE])
             player.stroke(ctx);
     }
