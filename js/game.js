@@ -94,6 +94,9 @@
         player2.stroke(ctx);
         player3.stroke(ctx);
 
+        ctx.strokeStyle = '#0f0';
+        player1.drawImage(ctx, iShip);
+
         ctx.fillStyle = '#fff';
         //ctx.fillText('Last Press: '+lastPress, 0, 20);
         ctx.fillText('Speed1: '+speed1, 0, 10);
