@@ -131,6 +131,8 @@
         this.rotation = 0;
     }
 
+    
+
     Circle.prototype.drawImage=function(ctx,img){
         if(img.width){
             ctx.save();
