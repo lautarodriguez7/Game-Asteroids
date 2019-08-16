@@ -45,6 +45,7 @@
         //Move Rect
         speed1 = 0;
         if (pressing[KEY_RIGHT]) {
+            player1.rotation += 10;
             speed1 += K1;
             speed2 += K2;
             if (speed3 < 10)
@@ -55,6 +56,7 @@
                 speed3 -=K3;
         }
         if (pressing[KEY_LEFT]) {
+            player.rotation -= 10;
             speed1 -= K1;
             speed2 -= K2;
             if (speed3 > -10)
