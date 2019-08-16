@@ -40,7 +40,7 @@
 
     function repaint() {
         requestAnimationFrame(repaint);
-        parseInt(ctx);
+        paint(ctx);
     }
 
     function act(deltaTime) {
