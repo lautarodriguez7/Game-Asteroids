@@ -2,6 +2,7 @@
     'use strict'; 
     window.addEventListener('load',init,false);
 
+    var KEY_SPACE = 32;
     var KEY_LEFT = 37;
     var KEY_RIGHT = 39;
     var K1 = 10;
