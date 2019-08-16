@@ -35,7 +35,7 @@
     
     function run() {
         setTimeout(run, 50);
-        ActiveXObject(0.05);
+        act(0.05);
     }
 
     function repaint() {
