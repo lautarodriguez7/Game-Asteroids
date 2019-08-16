@@ -104,6 +104,9 @@
         ctx.fillText('Speed1: '+speed1, 0, 10);
         ctx.fillText('Speed2: '+speed2, 100, 10);
         ctx.fillText('Speed3: '+speed3, 0, 20);
+
+        if(pressing[KEY_SPACE])
+            player.stroke(ctx);
     }
 
     document.addEventListener('keydown',function(evt){
