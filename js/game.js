@@ -17,6 +17,9 @@
     var speed1 = 0,
         speed2 = 0,
         speed3 = 0;
+    
+    var iShip = new Image();
+    iShip.src = 'assets/ship.png';
 
     function init() {
         canvas = document.getElementById('canvas');
