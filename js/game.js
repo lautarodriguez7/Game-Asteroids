@@ -22,6 +22,10 @@
     
     var iShip = new Image();
     iShip.src = 'assets/ship.png';
+    var spritesheet=new Image();
+    var background=new Image();
+    spritesheet.src='assets/asteroids.png';
+    background.src='assets/nebula2.jpg';
 
     function init() {
         canvas = document.getElementById('canvas');
